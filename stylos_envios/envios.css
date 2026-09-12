@@ -1,0 +1,142 @@
+body {
+    background: #0f0f12;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.dashboard-container {
+    padding: 30px 50px;
+}
+
+/* HEADER */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-box {
+    background: linear-gradient(135deg, #ff8c00, #ff5e00);
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.logout-btn {
+    background: white;
+    color: #ff8c00;
+    padding: 8px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #ff8c00;
+    color: white;
+}
+
+/* CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin-bottom: 40px;
+}
+
+.card-box {
+    background: #1b1b21;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #2a2a32;
+    transition: 0.3s;
+}
+
+.card-box:hover {
+    transform: translateY(-5px);
+    border-color: #ff8c00;
+}
+
+.card-box p {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.card-box h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* TABLA */
+.table-container {
+    background: #1b1b21;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #2a2a32;
+}
+
+.table-container h5 {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #16161b;
+}
+
+th {
+    text-align: left;
+    padding: 15px;
+    font-size: 13px;
+    color: #ff8c00;
+}
+
+td {
+    padding: 15px;
+    border-top: 1px solid #2a2a32;
+    font-size: 14px;
+}
+
+tr:hover {
+    background: #23232b;
+}
+
+/* BADGES */
+.badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.transit {
+    background: #1f3a6b;
+    color: #4da3ff;
+}
+
+.prep {
+    background: #3a2a12;
+    color: #ff9d00;
+}
+
+.delivered {
+    background: #123a22;
+    color: #00ff88;
+}
+
+.pending {
+    background: #2e2e35;
+    color: #aaa;
+}

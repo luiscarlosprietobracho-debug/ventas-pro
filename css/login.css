@@ -1,0 +1,80 @@
+
+/* IMAGEN DEL LOGO */
+.logo-img {
+    height: 160px;   /* tamaño del logo */
+    width: 220px;
+    object-fit: contain;
+}
+   
+.efecto {
+    color:white;
+    font-weight: 600;
+}
+
+.efecto:hover {
+    color: orange;
+}
+
+.vdos {
+     background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+.sup {
+    border-top: none;
+    background-color: black;
+}
+.Nbg {
+background-image: linear-gradient(to right, #1d1c1c 25%, black 100%);
+
+}
+
+.toggle-icon{
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: orange;
+    transition: all 0.3s ease;
+}
+
+.toggle-icon:hover{
+    color: #fff;
+    transform: translateY(-50%) scale(1.1);
+}
+
+/* Quitar icono nativo en Edge */
+input::-ms-reveal {
+    display: none;
+}
+
+/* Quitar icono en Chrome */
+input::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+}
+
+
+/*  TEXTO FLOTANTE (NO EMPUJA NADA) */
+.carousel-caption-custom{
+    position: absolute; /* clave */
+    bottom: 120px;
+    left: 118px;
+
+    color: white;
+    text-align: left;
+    max-width: 300px;
+
+    z-index: 2;
+}
+
+/* TEXTO */
+.carousel-caption-custom h5{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.carousel-caption-custom p{
+    font-size: 14px;
+}

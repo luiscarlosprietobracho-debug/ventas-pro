@@ -1,0 +1,97 @@
+
+        body {
+            background: black;
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            color: #e5e7eb;
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 30px 0 10px;
+            font-weight: 600;
+        }
+
+        /* CONTENEDOR */
+        table {
+            margin: 20px auto;
+            width: 85%;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            background: #1e293b;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+        }
+
+        th {
+            padding: 14px;
+            background: #111827;
+            color: #9ca3af;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 14px;
+            text-align: center;
+            border-bottom: 1px solid #334155;
+        }
+
+        tr:hover td {
+            background: #111827;
+        }
+
+        /* BOTON ELIMINAR */
+        a[href*="eliminar"] {
+            text-decoration: none;
+            background: #ef4444;
+            padding: 6px 12px;
+            border-radius: 6px;
+            color: white;
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        a[href*="eliminar"]:hover {
+            background: #dc2626;
+            text-decoration: none;
+        }
+
+        /* TOTAL */
+        strong {
+            color: #F09819;
+            font-size: 18px;
+        }
+
+        /* ZONA DE PAGO */
+        #paypal-button-container {
+            margin-top: 25px;
+            padding: 20px;
+            border-radius: 12px;
+            background: #1e293b;
+            width: 320px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+        }
+
+        /* BOTONES ABAJO */
+        div[align="center"] a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: #111827;
+            color: #e5e7eb;
+            transition: 0.3s;
+        }
+
+        div[align="center"] a:hover {
+            background: linear-gradient(to right, #FF512F, #F09819);
+            color: white;
+        }
+
+        td[colspan="5"] {
+            padding: 20px;
+            color: #9ca3af;
+        }
+    

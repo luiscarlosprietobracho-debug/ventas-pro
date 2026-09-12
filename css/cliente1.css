@@ -1,0 +1,252 @@
+
+/*  ESTILO GENERAL  */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #f5f5f5;
+}
+
+.contenido {
+    flex: 1;
+}
+
+/*  BARRA SUPERIOR  */
+.Superior {
+    background-image: linear-gradient(to right, #000000 0%, #1b1919 51%, #000000 100%);
+    box-shadow: 0 0 20px black;
+}
+
+/*  FOOTER  */
+.footer-pro {
+    background: #111;
+    color: #ccc;
+    padding: 60px 0 25px 0;
+    border-top: 1px solid #d3721dce;
+}
+
+.footer-title {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-title::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #e67e22;
+    display: block;
+    margin-top: 8px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #e67e22;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/*  TEXTO GRADIENTE  */
+.cambio {
+    background: linear-gradient(to right, #FF512F, #F09819);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/*  GRID  */
+.row.g-4 {
+    align-items: stretch;
+}
+
+/*  TARJETAS  */
+.CartaFlotar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    background: #111;
+}
+
+.CartaFlotar:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* IMAGEN */
+.card-img-top {
+    height: 160px;
+    object-fit: contain; 
+    
+}
+
+/* CUERPO */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* TITULO */
+.textop {
+    font-size: 14px;
+    font-weight: 600;
+    min-height: 40px;
+}
+
+/* GRADIENTE TITULO */
+.hseis{
+    font-size: 20px;
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.colorestxt{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.colorestxt1{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #ddd4d4 0%,  #01ec0da2 51%, #0eff1aea 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+/*  DESCRIPCIÓN  */
+.textoss {
+    color: #fff;
+    font-size: 13px;
+}
+
+
+/*  STOCK  */
+.colorestxt{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.colorestxt1{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #ddd4d4 0%,  #01ec0da2 51%, #0eff1aea 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+/*  INPUT  */
+.input-cantidad {
+    width: 70px;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+/* BOTÓN  */
+.btn1 {
+    background: linear-gradient(90deg, #FF512F, #F09819);
+    border: none;
+    color: white;
+    border-radius: 8px;
+    padding: 6px;
+    width: 100%;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn1:hover {
+    background: linear-gradient(90deg, #ff7b00, #ffc400);
+}
+
+/*  BADGE */
+.badge {
+    font-size: 11px;
+    padding: 5px 8px;
+    border-radius: 6px;
+}
+
+/*  RESPONSIVE  */
+@media (max-width: 1366px) {
+
+    .card-img-top {
+    height: 180px;
+    object-fit: cover;
+    }
+
+    .textop {
+        font-size: 13px;
+    }
+
+    .precio {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .card-img-top {
+        height: 120px;
+    }
+
+    .textop {
+        font-size: 12px;
+    }
+
+    .precio {
+        font-size: 15px;
+    }
+
+    .footer-pro {
+        text-align: center;
+    }
+
+    .footer-title::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+h1{
+    color:yellow;
+}
+

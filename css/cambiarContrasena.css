@@ -1,0 +1,69 @@
+
+        body{
+            background:#000;
+            font-family: Arial, sans-serif;
+        }
+        .contenedor{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .card{
+            background: rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            padding:30px;
+            border-radius:15px;
+            border:1px solid rgba(255,123,0,0.3);
+            box-shadow:0 0 15px rgba(255,123,0,0.2);
+            width:350px;
+            color:white;
+        }
+        .titulo{
+            text-align:center;
+            color:#ff7b00;
+            margin-bottom:20px;
+        }
+        .input-group{
+            position:relative;
+            margin-bottom:15px;
+        }
+        input{
+            width:100%;
+            padding:10px;
+            border-radius:10px;
+            border:1px solid orange;
+            background:transparent;
+            color:white;
+        }
+        input:focus{
+            outline:none;
+            box-shadow:0 0 8px rgba(255,123,0,0.5);
+        }
+        .toggle-password{
+            position:absolute;
+            right:10px;
+            top:50%;
+            transform:translateY(-50%);
+            cursor:pointer;
+            color:orange;
+        }
+        .btn{
+            width:100%;
+            padding:10px;
+            border:none;
+            border-radius:10px;
+            background: linear-gradient(to right, #f8401c, #db8916);
+            color:white;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        .btn:hover{
+            transform:scale(1.05);
+        }
+        table{
+            width:100%;
+        }
+        td{
+            padding:5px;
+        }

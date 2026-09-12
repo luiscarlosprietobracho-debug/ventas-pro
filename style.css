@@ -1,0 +1,57 @@
+body {
+    background-image: url('paisaje.jpg');
+    background-size: cover;       
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.login {
+    background-color: transparent;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid #fff;
+}
+
+.texto{
+    color: #fff;
+}
+/* INPUT */
+.form-floating > .form-control.finpud {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* PLACEHOLDER */
+.form-floating > .form-control.finpud::placeholder {
+    color: transparent;
+}
+
+/* LABEL */
+.form-floating > label {
+    color: rgba(255,255,255,0.7);
+}
+
+/* LABEL FLOTANTE */
+.form-floating > .form-control.finpud:focus ~ label,
+.form-floating > .form-control.finpud:not(:placeholder-shown) ~ label {
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* FOCUS INPUT */
+.form-floating > .form-control.finpud:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-color: #fff;
+    -webkit-box-shadow: 0 0 0 1000px rgba(0,0,0,0.5) inset !important;
+}
+
+/* AUTOFILL */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 1000px rgba(0,0,0,0.5) inset !important;
+    -webkit-text-fill-color: #fff !important;
+    transition: background-color 4000s ease-in-out 0s !important;
+}

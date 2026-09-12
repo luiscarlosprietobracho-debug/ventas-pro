@@ -1,0 +1,270 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* HEADER */
+.navSuperior{
+    background: rgba(0,0,0,0.7);
+}
+
+.h2catalogo {
+    text-align:center;
+    color:orange;
+    margin-top: 8px;
+}
+
+/* NAVBAR */
+.colorNavbar{
+    background: rgba(0,0,0,0.9);
+}
+
+.colorLinks{
+    color: white;
+    text-decoration: none;
+}
+
+/* GRID PRODUCTOS */
+.grid-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+    padding: 40px;
+}
+
+/* CARD */
+.CartaFlotar{
+    height: 100%;
+    min-height: 320px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+    overflow: hidden;
+}
+
+.CartaFlotar:hover{
+    transform: translateY(-10px) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25) !important;
+}
+
+/*TAMAÑO DE CARTAS */
+.card {
+    height: 100%;
+    background-color: black;
+}
+
+/* IMAGEN  */
+.card-img-top {
+    height: 180px;
+    object-fit: cover;
+}
+
+/* CUERPO DE LA CARD FLEX */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textoss {
+    color: #fff;
+}
+
+/* TEXTO */
+.textop{
+    color: white;
+}
+
+.precio{
+    color: #F09819;
+}
+
+.stock{
+    color: #ccc;
+}
+
+/* INPUT */
+.input-cantidad{
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+}
+
+/* BOTÓN */
+.btn1{
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s;
+    background-size: 200% auto;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 8px;
+    width: 100%;
+    font-weight: bold;
+    display: block;
+    outline: none;
+}
+
+.btn1:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/*  FOOTER  */
+.footer-pro {
+    background: #111;
+    color: #ccc;
+    padding: 60px 0 25px 0;
+    border-top: 1px solid #d3721dce;
+}
+
+/* Títulos */
+.footer-title {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;
+    font-weight: bold;                 /* transparente*/
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Línea decorativa debajo del título */
+.footer-title::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #e67e22;
+    display: block;
+    margin-top: 8px;
+}
+
+/* Texto */
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Lista enlaces */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e67e22;
+    padding-left: 5px;
+}
+
+/* Parte inferior */
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.cambio {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;         
+}
+
+.Superior {
+    background-image: linear-gradient(to right, #000000 0%, #1b1919 51%, #000000 100%);
+    box-shadow: 0 0 20px black;
+}
+
+.hseis{
+    font-size: 20px;
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.colorestxt{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+.colorestxt1{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #ddd4d4 0%,  #01ec0da2 51%, #0eff1aea 100%);
+    -webkit-background-clip: text;
+    color: transparent;  
+}
+
+/*  RESPONSIVE ADAPTADO A PANTALLAS 1366x768 */
+@media (max-width: 1366px) {
+
+    .grid-productos{
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    .CartaFlotar{
+        min-height: 280px;
+    }
+
+    .card-img-top {
+        height: 130px;
+    }
+
+    .card-body {
+        padding: 10px;
+    }
+
+    .textoss {
+        font-size: 13px;
+    }
+
+    .textop {
+        font-size: 12px;
+    }
+
+    .precio {
+        font-size: 15px;
+    }
+
+    .stock {
+        font-size: 11px;
+    }
+
+    .input-cantidad{
+        width: 55px;
+        height: 28px;
+        font-size: 12px;
+    }
+
+    .btn1{
+        padding: 6px;
+        font-size: 13px;
+    }
+}
+
+/* RESPONSIVE PARA MOVIL */
+@media (max-width: 768px) {
+    .footer-pro {
+        text-align: center;
+    }
+
+    .footer-title::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,66 @@
+
+.colorestxt{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;  
+}
+
+.colorestxt1{
+    font-weight: 500 !important;
+    background: linear-gradient(to right, #ddd4d4 0%,  #01ec0da2 51%, #0eff1aea 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;  
+}
+
+/* Títulos */
+.titulos {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;
+    font-weight: bold;                 /* transparente*/
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Lista enlaces */
+.links {
+    list-style: none;
+    padding: 0;
+}
+
+.links{
+    margin-bottom: 10px;
+}
+
+.links{
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.links:hover {
+    cursor: pointer;
+    color: #e67e22;
+    padding-left: 5px;
+}
+
+.Fpro {
+    background: #111;
+    color: #ccc;
+    padding: 60px 0 25px 0;
+    border-top: 1px solid #d3721dce;
+}
+
+.decoracion {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #e67e22;
+    display: block;
+    margin-top: 8px;
+}

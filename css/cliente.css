@@ -1,0 +1,90 @@
+/*     ESTILOS DEL NAVBAR SUPERIOR  */
+.navbar.colorNavbar{
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%) !important;
+    color: #fff;
+}
+
+/*   ESTILOS LETRAS DEL H2 VENTASPRO    */
+.h2Ventas {
+    color: black;
+    font-weight:600;
+
+}
+
+
+/*   ESTILOS DEL NAV-BARRA-SUPERIOR    */
+.navSuperior {
+    background-image: linear-gradient(to right, #000000 0%, #1b1919 51%, #000000 100%);/*#0e0d0d Posible Color*/
+    box-shadow: 0 0 20px black;
+} 
+
+/*  ESTILOS CATEGORIAS DESTACADAS */
+.categorias {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%) !important;
+    transition: 1s;
+}
+.categorias:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+}
+
+/*  ESTILOS LINKS  */
+.colorLinks {
+    text-decoration: none;
+    color:#fff;
+}
+
+/*  ICONOS FLOAT  */
+.eleven {
+    transition: 1s;
+}
+
+.eleven:hover {
+        transform: translateY(-4px);
+}
+
+/*  ESTILOS DE MENÚ CATEGORIAS */
+.Mcategorias:hover {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;                 
+}
+
+/*  ESTILOS DE LA CARTA */
+.CartaFlotar {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card.CartaFlotar:hover {
+    transform: translateY(-10px) !important;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25) !important;
+}
+
+.textop{
+    color:black !important;
+    font-weight: 500 !important;
+}
+
+/* ESTILO DE CERRAR SESIÓN */
+.btn-role {
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+  margin:0;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+/* Hover animado */
+.btn-role:hover {
+  background-position: right center;
+  color: #fff;
+}

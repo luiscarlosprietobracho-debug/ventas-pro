@@ -1,0 +1,140 @@
+
+body {
+    color: white !important;
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #FF512F);
+    background-size: 400% 400%;
+    animation: fondoAnimado 10s ease infinite;
+    min-height: 100vh;
+}
+
+/* ANIMACIÓN */
+@keyframes fondoAnimado {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+
+.fondoo{
+    background-color: transparent;
+    backdrop-filter: blur(28px);
+    -webkit-backdrop-filter: blur(28px);
+    border: 1pt solid orange;   
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* TARJETA */
+.card {
+    background-color: transparent;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1pt solid orange;
+    padding: 40px;
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* TITULO */
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+/* INPUTS */
+.form-control {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: black;
+    border-radius: 12px;
+}
+
+/* AL ENFOCAR INPUT */
+.form-control:focus {
+    background: rgba(255,255,255,0.12);
+    border-color: #F09819;
+    box-shadow: 0 0 10px rgba(240,152,25,0.5);
+    color: white;
+}
+/* INPUTS */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #111827;
+    color: white;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* EFECTO FOCUS */
+input:focus, textarea:focus {
+    box-shadow: 0 0 0 2px #F09819;
+}
+
+/* BOTON */
+.btn1 {
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  margin: 8px;
+  margin-left: 98px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+.btn1:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+/* LINK */
+.volver {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 26px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.volver:hover {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;         
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

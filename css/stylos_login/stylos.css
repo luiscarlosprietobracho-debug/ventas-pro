@@ -1,0 +1,239 @@
+/* ESTILOS DEL CARRUSEL */
+.carousel-img {
+    width: 80%;              /* tamaño horizontal */
+    height: 500px;           /* tamaño vertical */
+    margin-left: 100px;
+    margin-top: 60px;
+    object-fit: cover;       /* mantiene proporción */
+    border: 1px solid #d3721dce; /* color del borde */
+    border-radius: 20px;     /* esquinas redondeadas */
+    box-shadow: 0 0 15px rgba(230, 126, 34, 0.2), 0 0 5px rgba(230, 126, 34, 0.1); /* sombra elegante */
+}
+
+/* CENTRA VERTICALMENTE */
+.carousel-item {
+    position: relative;
+}
+
+/* ESTILO FONDO OSCURO - POSICIÓN */
+.custom-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0.75) 30%,
+        rgba(0,0,0,0.3) 60%,
+        rgba(0,0,0,0.1)
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 18%;
+}
+
+/* TEXTO IZQUIERDA */
+.carousel-caption-custom {
+    max-width: 500px;
+    color: #fff;
+}
+
+/* TITULO */
+.carousel-caption-custom h5 {
+    color: #e67e22;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase; /* TODO EL TEXTO EN MAYÚSCULAS */
+}
+
+/* PARRAFO */
+.carousel-caption-custom p {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .carousel-caption-custom h5 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption-custom p {
+        font-size: 1rem;
+    }
+
+    .custom-overlay {
+        padding-left: 5%;
+    }
+}
+
+/* ESTILOS DE LA TARJETA */
+.login-card {
+    background-color: #1c1c1c;
+    border: 1px solid #d3721dce;
+    border-radius: 18px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 0 15px rgba(230, 126, 34, 0.2), 0 0 5px rgba(230, 126, 34, 0.1);
+}
+
+/* ICONO NARANJA SUPERIOR */
+.icon-circle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-circle {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000;
+}
+
+/* Icono input */
+.floating-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #e67e22; /* naranja */
+    font-size: 1.2rem;
+    pointer-events: none;
+    z-index: 3;
+}
+
+/* TITULO DE LA CARTA */
+.title {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;                 /* transparente*/
+    font-weight: 700;
+    text-align: center;
+}
+.subtitle {
+    color: #b1adad;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* INPUTS - USUARIO, CONTRASEÑA */
+
+/* FONDO DEL INPUT */
+.form-control.fondo {
+    background-color: #262626 !important;
+    border: 1px solid #3a3a3a !important;
+    color: white !important;
+    border-radius: 18px !important;
+    
+}
+
+/* COLOR DEL INPUT BASE */
+.form-floating > label {
+    color:none !important;
+}
+
+/* ELIMINAR FONDO BLANCO CUANDO EL LABEL FLOTA */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(0.85) translateY(-1.0rem);
+    background-color: transparent !important; 
+    color: #e67e22 !important; /* El naranja exacto */
+    opacity: 1 !important;
+}
+
+/* ESTADO DEL INPUT CUANDO ENFOCA */
+.form-control.fondo:focus {
+    background-color: #262626 !important;
+    border-color: #e67e22 !important; /* Borde naranja al escribir */
+    color: white !important;
+    box-shadow: 0 0 8px rgba(230, 126, 34, 0.3) !important; /* Brillo naranja sutil */
+    outline: none !important;
+}
+
+/* FORZANDO QUE EL FONDO SEA TRANSPARENTER - YA QUE LA JERARQUIA NO LO DEJARIA */
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+    background-color: transparent !important;
+}
+
+/* COLOR DEL TEXTO */
+.form-control.fondo::placeholder {
+    color: transparent;
+}
+
+
+
+/* Botón con degradado */
+.btn-grad {
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+}
+
+.btn-grad {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* HR SEPARADOR */
+.custom-hr {
+    border-top: 1px solid #6e6c6c;
+    opacity: 1;
+    margin: 1.5rem 0;
+}
+
+/* TEXTO DE USUARIOS DE PRUEBAS */
+.test-users-section {
+    font-size: 0.75rem;
+    color: #b1adad;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.test-title {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.highlight {
+    color: #e67e22;
+    font-weight: 600;
+}
+
+
+/* MENÚ DESPLEGABLE */
+/* Quitar fondo blanco del autofill del navegador */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #262626 inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+

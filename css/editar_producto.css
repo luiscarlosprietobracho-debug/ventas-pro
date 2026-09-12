@@ -1,0 +1,123 @@
+
+body{
+    font-family: Arial;
+    background:#000;
+}
+
+/* CONTENEDOR */
+.contenedor-producto{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+/* CARD */
+.card-producto{
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(10px);
+    width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,123,0,0.3);
+    box-shadow: 0 0 15px rgba(255,123,0,0.2);
+    color: white;
+    animation: entrada 0.5s ease;
+}
+
+/* ANIMACIÓN */
+@keyframes entrada {
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* TITULO */
+.titulo-card{
+    color: #ff7b00;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* FORM */
+.form-producto{
+    display: flex;
+    flex-direction: column;
+}
+
+/* INPUTS */
+input, textarea{
+    background: transparent;
+    color: white;
+    border-radius:10px;
+    border: 1px solid orange;
+    padding:8px;
+    margin-bottom: 10px;
+}
+
+textarea{
+    resize: none;
+}
+
+/* EFECTO FOCUS */
+input:focus, textarea:focus{
+    outline: none;
+    box-shadow: 0 0 8px rgba(255,123,0,0.5);
+}
+
+/* BOTÓN */
+.btn-submit{
+    background: linear-gradient(to right, #f8401c, #db8916);
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.btn-submit:hover{
+    transform: scale(1.05);
+}
+
+/* LINK */
+.volver{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    color:#ff7b00;
+    text-decoration:none;
+}
+
+.volver:hover{
+    text-decoration: underline;
+}
+
+/* CHROME, EDGE, SAFARI - AQUI SE REMUEVE EL INPUT POR DEFECTO DEL NAVEGADOR */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* FIREFOX */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.cambio {
+    text-decoration: none;
+    color: orange;
+}
+
+.cambio:hover {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;         
+}

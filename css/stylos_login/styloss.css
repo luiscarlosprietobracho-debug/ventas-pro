@@ -1,0 +1,237 @@
+/* Fondo del body con degradado radial para simular el efecto de iluminación */
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  /*background:black;*/
+  background-attachment: fixed;
+
+}
+
+/*  HEADER SUPERIOR  */
+.top-header {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    border-bottom: 2px solid #e67e22;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}
+
+.top-header h5 {
+    color: white;
+    font-weight: 600;
+}
+
+.top-header small {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.top-header span {
+    color: white;
+    font-weight: 600;
+}
+
+/*   LOGO  */
+.logo-box {
+    color: #ff9900;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+/*  FOOTER  */
+.footer-pro {
+    background: #111;
+    color: #ccc;
+    padding: 60px 0 25px 0;
+    border-top: 1px solid #d3721dce;
+}
+
+/* Títulos */
+.footer-title {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;
+    font-weight: bold;                 /* transparente*/
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Línea decorativa debajo del título */
+.footer-title::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #e67e22;
+    display: block;
+    margin-top: 8px;
+}
+
+/* Texto */
+.footer-text {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Lista enlaces */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #e67e22;
+    padding-left: 5px;
+}
+
+/* Parte inferior */
+.footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-pro {
+        text-align: center;
+    }
+
+    .footer-title::after {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*  NAV SECUNDARIO  */
+.nav-secundario {
+    background: black;
+    padding: 15px 0;
+    border-bottom: 2px solid #e67e22;
+}
+
+/* Links izquierda */
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item-custom {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-item-custom:hover {
+    color: #e67e22;
+}
+
+/* Botón Registro */
+.btn-registro {
+    background: linear-gradient(to right, #FF512F, #F09819);
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-registro:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(230, 126, 34, 0.3);
+}
+
+/* BOTÓN ROL CON EFECTO GRADIENTE */
+.btn-role {
+  background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%);
+  margin:0;
+  padding: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border-radius: 15px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  font-weight: 600;
+}
+
+/* Hover animado */
+.btn-role:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+
+
+/* MENÚ DROPDOWN */
+.menu-role {
+    background-color: #1c1c1c;
+    border: 1px solid #e67e22;
+    border-radius: 15px;
+    padding: 10px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* ITEMS */
+.menu-role .dropdown-item {
+    color: #ccc;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.menu-role .dropdown-item:hover {
+    background-color: #e67e22;
+    color: #000;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+
+/* ESTILO DE LA IMAGEN - LOGO */
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+.cambio:hover {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;         
+}
+
+.estilosheader{
+    background-image: linear-gradient(to right, #000000 0%, #1b1919 51%, #000000 100%) !important;
+    color: #fff;
+}
+

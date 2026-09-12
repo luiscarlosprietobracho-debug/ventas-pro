@@ -1,0 +1,181 @@
+
+/* FONDO */
+body{
+    margin:0;
+    min-height:100vh;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Arial;
+}
+
+/* TARJETA LOGIN */
+.login-card {
+    background-color: #1c1c1c;
+    border: 1px solid #d3721dce;
+    border-radius: 18px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(230, 126, 34, 0.2), 0 0 5px rgba(230, 126, 34, 0.1);
+}
+
+/* ICONO SUPERIOR */
+.icon-circle-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-circle {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000;
+}
+
+/* TITULO */
+.title {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    text-align: center;
+}
+
+.subtitle {
+    color: #b1adad;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* INPUTS */
+.form-control.fondo {
+    background-color: #262626 !important;
+    border: 1px solid #3a3a3a !important;
+    color: white !important;
+    border-radius: 18px !important;
+}
+
+/* ICONO INPUT */
+.floating-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #e67e22;
+    font-size: 1.2rem;
+}
+
+/* EFECTO FOCUS */
+.form-control.fondo:focus {
+    background-color: #262626 !important;
+    border-color: #e67e22 !important;
+    color: white !important;
+    box-shadow: 0 0 8px rgba(230, 126, 34, 0.3) !important;
+}
+
+/* BOTON */
+.btn-grad {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    padding: 12px;
+    border-radius: 10px;
+    border:none;
+    color:white;
+    font-weight:bold;
+    transition:0.5s;
+    background-size:200% auto;
+}
+
+.btn-grad:hover{
+    background-position:right center;
+}
+
+/* LINK */
+.link-volver{
+    color:#e67e22;
+    text-decoration:none;
+}
+
+.link-volver:hover{
+    text-decoration:underline;
+}
+
+.cambio:hover {
+    background: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+    background-clip: text;              /* estándar */
+    -webkit-background-clip: text;      /* Chrome / Edge */
+    color: transparent;         
+}
+
+/* INPUTS - USUARIO, CONTRASEÑA */
+
+/* FONDO DEL INPUT */
+.form-control.fondo {
+    background-color: #262626 !important;
+    border: 1px solid #3a3a3a !important;
+    color: white !important;
+    border-radius: 18px !important;
+    
+}
+
+/* COLOR DEL INPUT BASE */
+.form-floating > label {
+    color:none !important;
+}
+
+/* ELIMINAR FONDO BLANCO CUANDO EL LABEL FLOTA */
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+    transform: scale(0.85) translateY(-1.0rem);
+    background-color: transparent !important; 
+    color: #e67e22 !important; /* El naranja exacto */
+    opacity: 1 !important;
+}
+
+/* ESTADO DEL INPUT CUANDO ENFOCA */
+.form-control.fondo:focus {
+    background-color: #262626 !important;
+    border-color: #e67e22 !important; /* Borde naranja al escribir */
+    color: white !important;
+    box-shadow: 0 0 8px rgba(230, 126, 34, 0.3) !important; /* Brillo naranja sutil */
+    outline: none !important;
+}
+
+/* FORZANDO QUE EL FONDO SEA TRANSPARENTER - YA QUE LA JERARQUIA NO LO DEJARIA */
+.form-floating > .form-control:focus ~ label::after,
+.form-floating > .form-control:not(:placeholder-shown) ~ label::after {
+    background-color: transparent !important;
+}
+
+.toggle-icon{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 20px;
+    color: orange;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.toggle-icon:hover{
+    transform: translateY(-50%) scale(1.1);
+    color: #fff;
+}
+
+input::-ms-reveal {
+    display: none;
+}
+
+input::-webkit-credentials-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+}

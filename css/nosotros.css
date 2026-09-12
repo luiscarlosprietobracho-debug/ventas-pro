@@ -1,0 +1,99 @@
+/* ===== FONDO GENERAL ===== */
+body{
+    background: linear-gradient(135deg, #0f0f0f, #1a1a1a, #FF512F);
+    background-size: 400% 400%;
+    animation: fondoAnimado 10s ease infinite;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* ANIMACIÓN */
+@keyframes fondoAnimado {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* CONTENEDOR */
+.contenedor{
+    max-width:1000px;
+    margin:50px auto;
+    padding:30px;
+    border-radius:20px;
+
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(20px);
+
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+}
+
+/* TITULO */
+.titulo h1{
+    font-size:40px;
+    font-weight:bold;
+    background: linear-gradient(to right, #FF512F, #F09819);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.titulo p{
+    color:#ccc;
+}
+
+/* SECCIONES */
+.seccion{
+    margin-bottom:30px;
+}
+
+/* ICONOS */
+.icono{
+    font-size:30px;
+    color:#F09819;
+    margin-right:10px;
+}
+
+/* TEXTOS */
+h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+p{
+    color:#ccc;
+}
+
+/* LISTAS */
+ul li{
+    margin-bottom:5px;
+    color:#ddd;
+}
+
+/* TARJETAS EQUIPO */
+.equipo-card{
+    background: rgba(0,0,0,0.7);
+    border-radius:15px;
+    padding:20px;
+    border:1px solid rgba(255,123,0,0.3);
+    box-shadow:0 0 15px rgba(255,123,0,0.2);
+    transition:0.3s;
+}
+
+.equipo-card:hover{
+    transform: scale(1.05);
+}
+
+/* BOTÓN */
+.btn-volver{
+    display:inline-block;
+    padding:12px 25px;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+
+    background: linear-gradient(to right, #FF512F, #F09819);
+    transition:0.3s;
+}
+
+.btn-volver:hover{
+    transform: scale(1.05);
+}

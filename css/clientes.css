@@ -1,0 +1,92 @@
+.textop{
+    color:black !important;
+    font-weight: 500 !important;
+}
+
+/* Botón con degradado */
+.btn-grad {
+  background-image: linear-gradient(to right, #0b0b0b 0%, #4e4c49 51%, #000000 100%);
+}
+
+.btn-grad {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  outline: none;
+  border: none;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* CONTENEDOR */
+.bienvenida-box{
+    color: white;
+    padding: 25px 30px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    max-width: 600px; 
+    margin: 0; 
+}
+
+/* FOTO */
+.foto-perfil{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #F09819;
+    box-shadow: 0 0 12px rgba(240,152,25,0.6);
+    transition: 0.3s;
+}
+
+.foto-perfil:hover{
+    transform: scale(1.08);
+}
+
+/* TEXO */
+.bienvenida-texto{
+    color: white;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.bienvenida-texto span{
+    color: #F09819;
+}
+s
+/* SUBTEXTO */
+.subtexto{
+    color: #aaa;
+    font-size: 14px;
+}
+
+/*  BACKGROUD DE BINVENIDA */
+.conte {
+    background: linear-gradient(135deg, rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+}
+
+/* BACKGROUD DEL HEADER */
+.fondo {
+    background-image: linear-gradient(to right, #000000 0%, #1b1919 51%, #000000 100%);
+    padding: 10px 0;
+}
+
+.ContIMG{
+    max-height: 70px;
+    object-fit: contain;
+}
+
+.imagen-producto{
+    height: 400px;       /* todas las imágenes mismo alto */
+    object-fit: cover;   /* recorta sin deformar */
+}
